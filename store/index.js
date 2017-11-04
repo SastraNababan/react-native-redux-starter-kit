@@ -1,9 +1,6 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import logger from 'redux-logger'
 import reducers from './reducers'
-// import devTools from 'remote-redux-devtools';
-// import composeWithDevTools from 'remote-redux-devtools';
-// import devToolsEnhancer from 'remote-redux-devtools'; 
 import thunk from 'redux-thunk';
 import middlewareExample from './middlewares'
 
