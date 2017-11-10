@@ -4,6 +4,9 @@ import {
   Container,
   Header,
   Content,
+  Left,
+  Right,
+  Icon,
   Body,
   Text,
   H1,
@@ -18,9 +21,15 @@ class ReduxScreen extends Component {
     return (
       <Container>
         <Header>
-          <Body>
-            <Text>Redux</Text>
-          </Body>
+        <Left>
+          <Button transparent onPress={ () => navigate('DrawerOpen')}>
+            <Icon name="ios-menu"/>
+          </Button>
+        </Left>
+        <Body>
+          <Text>Redux</Text>
+        </Body>
+        <Right/>
         </Header>
         <Content padder>
           <H1>Redux Screen </H1>

@@ -3,6 +3,9 @@ import { View,ScrollView } from 'react-native'
 import {
   Container,
   Header,
+  Left,
+  Right,
+  Icon,
   Content,
   Body,
   Text,
@@ -30,14 +33,20 @@ class HomeScreen extends Component {
     return (
       <Container>
         <Header>
+          <Left>
+            <Button transparent onPress={ () => navigate('DrawerOpen')}>
+              <Icon name="ios-menu"/>
+            </Button>
+          </Left>
           <Body>
             <Text>Welcome</Text>
           </Body>
+          <Right/>
         </Header>
         <Content contentContainerStyle={{flex: 1}}>
           <View style={{justifyContent:'center',alignItems:'center',flex:1}}>
             <H1>React Native Starter Kit </H1>
-            <Text>With Redux,Nativebase, ReactNavigation</Text>
+            <Text style={{marginBottom:20}}>With Redux,Nativebase, ReactNavigation</Text>
             <CircleButton caption="Start" onPress={() => navigate('AboutScreen')}/>
           </View>
         </Content>

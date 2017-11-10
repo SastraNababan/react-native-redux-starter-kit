@@ -3,6 +3,9 @@ import { View } from 'react-native'
 import {
   Container,
   Header,
+  Left,
+  Right,
+  Icon,
   Content,
   Body,
   Text,
@@ -18,9 +21,15 @@ class AboutScreen extends Component {
     return (
       <Container>
         <Header>
-          <Body>
-            <Text>About</Text>
-          </Body>
+        <Left>
+          <Button transparent onPress={ () => navigate('DrawerOpen')}>
+            <Icon name="ios-menu"/>
+          </Button>
+        </Left>
+        <Body>
+          <Text>About</Text>
+        </Body>
+        <Right/>
         </Header>
         <Content padder>
           <H1>About Screen </H1>
