@@ -1,22 +1,31 @@
 import React, { Component } from 'react';
 import {Platform} from 'react-native'
-import {StackNavigator} from 'react-navigation'
-import IndexScreen from './screens/index'
-import OtherScreen from './screens/other'
-
+import {StackNavigator,DrawerNavigator} from 'react-navigation'
+import HomeScreen from './screens/Home'
+import AboutScreen from './screens/About'
+import {DrawerMenu} from './components'
+import ReduxScreen from './screens/Redux'
  
-const Navigator = StackNavigator(
-  {
-    IndexScreen: { screen: IndexScreen},
-    OtherScreen: { screen: OtherScreen},
-  },
-{
-    initialRouteName: 'IndexScreen',
-    headerMode: 'none', 
-    mode: Platform.OS === 'ios' ? 'modal' : 'card',
-  }
-);
 
+const routes ={
+  HomeScreen: { screen: HomeScreen},
+  AboutScreen: { screen: AboutScreen},
+  ReduxScreen: { screen: ReduxScreen},
+}
+
+const Navigator = DrawerNavigator(
+  routes,
+  {
+  initialRouteName: "HomeScreen",
+  contentComponent: DrawerMenu,
+  contentOptions: {
+    activeTintColor: '#e91e63',
+    style: {
+      flex: 1,
+      paddingTop: 15,
+    }
+  }
+}); 
 
 const AppNavigator = () => (
   <Navigator/>

@@ -6,6 +6,7 @@ import {Provider } from 'react-redux'
 import getTheme from './theme/components'
 import configureStore from './store'
 import AppNavigator from './AppNavigator'
+import theme from './theme/variables'
 
 const store = configureStore()
 
@@ -28,7 +29,7 @@ export default class App extends Component {
       return <Expo.AppLoading />
     }
     return (
-      <StyleProvider style={getTheme((themeState === 'platform') ? material : undefined)}>
+      <StyleProvider style={getTheme(theme)}>
         <Provider store={store}>
           <AppNavigator onNavigationStateChange={null} />
         </Provider>

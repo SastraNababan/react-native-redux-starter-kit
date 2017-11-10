@@ -1,8 +1,17 @@
 import React, { Component } from 'react'
 import { View } from 'react-native'
-import {Container,Header,Content,Body,Text,H1,Button} from 'native-base'
+import {
+  Container,
+  Header,
+  Content,
+  Body,
+  Text,
+  H1,
+  Button
+} from 'native-base'
+import {FooterTab} from '../components'
 
-class OtherScreen extends Component {
+class AboutScreen extends Component {
   state = {  }
   render() {
     const {navigate} = this.props.navigation;
@@ -10,20 +19,18 @@ class OtherScreen extends Component {
       <Container>
         <Header>
           <Body>
-            <Text>Other Screen</Text>
+            <Text>About</Text>
           </Body>
         </Header>
         <Content padder>
-          <H1>Another Screen </H1>
+          <H1>About Screen </H1>
           <Text>With Redux,Nativebase, ReactNavigation</Text>
-          <Button onPress={() => navigate('IndexScreen')}>
-            <Text>Back to Index Screen</Text>
-          </Button>
         </Content>
+        <FooterTab navigate={navigate} current="AboutScreen"/>
       </Container>
       
     )
   }
 }
 
-export default OtherScreen
+export default AboutScreen
