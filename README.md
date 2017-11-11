@@ -1,15 +1,16 @@
 # React Native Starter kit
 React Native Starter Kit With Redux,Nativebase, ReactNavigation
 <p>
-<img src="https://i.imgur.com/ySrXFxZ.png" width="200">
-<img src="https://i.imgur.com/fX4V7hf.png" width="200">
-<img src="https://i.imgur.com/dQXiIIQ.png" width="200">
+<img src="https://i.imgur.com/ySrXFxZ.png" width="250"> 
+<img src="https://i.imgur.com/dQXiIIQ.png" width="250"> 
+<img src="https://i.imgur.com/fX4V7hf.png" width="250"> 
 </p>
 
 ## Requirements
-- Node
-- Create React Native
-- Yarn
+- [Node 8.x or newer](https://nodejs.org/en).
+- [Yarn](https://yarnpkg.com/en/docs/install).
+- [Xcode for iOS development](https://developer.apple.com/xcode)
+- [Android Studio for Android development](https://developer.android.com/studio/index.html)
 
 ## Getting Started
 The easiest way to get started is to clone the repository:
