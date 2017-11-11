@@ -33,7 +33,7 @@ class AboutScreen extends Component {
         </Header>
         <Content padder>
           <H1>About Screen </H1>
-          <Text>With Redux,Nativebase, ReactNavigation</Text>
+          <Text>Just simple React Native starter kit build powered by Redux,Nativebase,ReactNavigation</Text>
         </Content>
         <FooterTab navigate={navigate} current="AboutScreen"/>
       </Container>

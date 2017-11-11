@@ -17,16 +17,16 @@ from 'native-base'
 import theme from '../theme'
 import {CircleButton,FooterTab} from '../components'
 import { connect } from 'react-redux';
-import {sampleAction} from '../store/actions'
+
 
 
 class HomeScreen extends Component {
   state = {  }
 
-  testAction(){
-    // this.props.dispatch(sampleAction())
-    this.props.sampleAction()
-  }
+  // testAction(){
+  //   // this.props.dispatch(sampleAction())
+  //   this.props.sampleAction()
+  // }
 
   render() {
     const {navigate} = this.props.navigation;
@@ -46,7 +46,7 @@ class HomeScreen extends Component {
         <Content contentContainerStyle={{flex: 1}}>
           <View style={{justifyContent:'center',alignItems:'center',flex:1}}>
             <H1>React Native Starter Kit </H1>
-            <Text style={{marginBottom:20}}>With Redux,Nativebase, ReactNavigation</Text>
+            <Text style={{marginBottom:20}}>Powered by Redux, Nativebase, ReactNavigation</Text>
             <CircleButton caption="Start" onPress={() => navigate('AboutScreen')}/>
           </View>
         </Content>
@@ -63,6 +63,6 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps ={
-  sampleAction,
+  // sampleAction,
 }
 export default connect(mapStateToProps,mapDispatchToProps)(HomeScreen);

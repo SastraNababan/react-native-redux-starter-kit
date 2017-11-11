@@ -1,8 +1,8 @@
 import * as types from '../types'
 import { combineReducers } from 'redux'
-import sampleReducer from './sampleReducer'
+import counter from './counter'
 const reducers = combineReducers({
-	sampleReducer
+	counter
 })
 
 export default reducers;

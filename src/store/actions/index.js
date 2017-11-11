@@ -1,6 +1,10 @@
 import * as types from '../types'
-export const sampleAction = () => ({
-  type:types.SAMPLE_ACTION,
-  payload:'sample action'
+
+export const counterPlus = () => ({
+  type:types.COUNTER_PLUS
+})
+
+export const counterMinus = () => ({
+  type:types.COUNTER_MINUS
 })
  
